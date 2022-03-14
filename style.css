@@ -1,5 +1,7 @@
 /* google fonts poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+/*  Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
 
 * {
   padding: 0;
@@ -11,7 +13,8 @@ body {
   width: 100%;
   height: 100vh;
   background-color: #000;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
 }
 
 main {
@@ -41,4 +44,117 @@ main .song-player {
   height: 13%;
   position: fixed;
   bottom: 0;
+}
+
+/* menu side section */
+main .menu-side .logo svg {
+  margin: 5%;
+  height: 8%;
+  width: 44%;
+}
+
+main .menu-side .navbar ul {
+  margin-left: 5%;
+  margin-right: 1%;
+  list-style: none;
+  border-bottom: 0.001rem solid rgba(255, 255, 255, 0.281);
+}
+
+main .menu-side .navbar {
+  margin: 5% 2% 5% 10%;
+}
+
+main .menu-side .navbar h6 {
+  color: rgba(255, 255, 255, 0.377);
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+main .menu-side .navbar h6 ion-icon {
+  font-size: 1.8rem;
+  margin-right: 6%;
+  margin-bottom: -0.3rem;
+}
+main .menu-side .navbar h6:hover {
+  color: #fff;
+}
+main .menu-side .navbar .active {
+  color: #fff;
+}
+main .menu-side .links {
+  margin: 20% 2% 5% 10%;
+}
+main .menu-side .links h6 {
+  color: rgba(255, 255, 255, 0.377);
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+main .menu-side .links h6 ion-icon {
+  font-size: 1.8rem;
+  margin-right: 6%;
+  margin-bottom: -0.3rem;
+}
+main .menu-side .links .playlist ion-icon {
+  background-color: rgba(255, 255, 255, 0.377);
+  color: #000;
+  padding: 0.2rem;
+  font-size: 1.2rem;
+  border-radius: 0.1rem;
+}
+
+main .menu-side .links h6:hover {
+  color: #fff;
+}
+main .menu-side .links .liked ion-icon {
+  font-size: 1.7rem;
+}
+/* main .menu-side .navbar ul li {
+  padding-bottom: 1.3rem;
+}
+
+main .menu-side .navbar ul li ion-icon {
+  font-size: 1.6rem;
+  margin-right: 6%;
+  color: rgba(255, 255, 255, 0.548);
+  margin-bottom: -0.3rem;
+}
+
+main .menu-side .navbar ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.548);
+  font-size: 0.8rem;
+  transition: all 0.3s ease-in-out;
+}
+
+main .menu-side .navbar ul .active a,
+main .menu-side .navbar ul .active ion-icon {
+  color: #fff;
+}
+.add-icon {
+  color: #000 !important;
+  background-color: rgba(255, 255, 255, 0.548);
+  font-size: 1rem !important;
+  padding: 0.3rem;
+  border-radius: 1%;
+}
+.heart-icon {
+  background-color: #8ec5fcc0;
+  background-image: linear-gradient(62deg, #8ec5fcce 0%, #e0c3fcc4 100%);
+  font-size: 1rem !important;
+  padding: 0.3rem;
+  border-radius: 1%;
+  color: rgba(235, 233, 233, 0.733) !important;
+}
+.playlist-add {
+  margin-top: 10%;
+} */
+
+/* hover */
+main .menu-side .navbar ul li:hover main .menu-side .navbar ul li a {
+  color: #fff !important;
 }
