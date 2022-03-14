@@ -13,3 +13,32 @@ body {
   background-color: #000;
   font-family: "Poppins", sans-serif;
 }
+
+main {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid #fff; */
+  display: flex;
+}
+
+main .menu-side,
+.song-side {
+  position: relative;
+  width: 25%;
+  height: 100%;
+  color: #fff;
+  /* border: 1px solid #fff; */
+}
+
+main .song-side {
+  width: 75%;
+  background-color: rgb(27, 27, 27);
+}
+
+main .song-player {
+  background-color: rgb(39, 44, 71);
+  width: 100%;
+  height: 13%;
+  position: fixed;
+  bottom: 0;
+}
