@@ -38,15 +38,7 @@ main .song-side {
   background-color: rgb(27, 27, 27);
 }
 
-main .song-player {
-  background-color: rgb(39, 44, 71);
-  width: 100%;
-  height: 13%;
-  position: fixed;
-  bottom: 0;
-}
-
-/* menu side section */
+/* menu side section starts*/
 main .menu-side .logo svg {
   margin: 5%;
   height: 8%;
@@ -113,48 +105,71 @@ main .menu-side .links h6:hover {
 main .menu-side .links .liked ion-icon {
   font-size: 1.7rem;
 }
-/* main .menu-side .navbar ul li {
-  padding-bottom: 1.3rem;
+
+/* menu side section ends*/
+
+/* song playes section starts*/
+
+main .song-player {
+  background-color: rgb(39, 44, 71);
+  width: 100%;
+  height: 13%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
 }
 
-main .menu-side .navbar ul li ion-icon {
-  font-size: 1.6rem;
-  margin-right: 6%;
-  color: rgba(255, 255, 255, 0.548);
-  margin-bottom: -0.3rem;
+/* wavw start*/
+main .song-player .wave {
+  width: 1.875rem;
+  height: 1.875rem;
+  padding-bottom: 0.313rem;
+  /* border: 1px solid #fff; */
+  display: flex;
+  align-items: flex-end;
 }
 
-main .menu-side .navbar ul li a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.548);
-  font-size: 0.8rem;
-  transition: all 0.3s ease-in-out;
+main .song-player .wave .wave1 {
+  width: 3px;
+  height: 10px;
+  border-radius: 10px 10px 0px 0px;
+  margin-right: 3px;
+  background: #1ed760;
+  animation: unset;
 }
 
-main .menu-side .navbar ul .active a,
-main .menu-side .navbar ul .active ion-icon {
-  color: #fff;
+main .song-player .wave .wave1:nth-child(2) {
+  height: 13px;
+  /* animation-delay: 0.4s; */
 }
-.add-icon {
-  color: #000 !important;
-  background-color: rgba(255, 255, 255, 0.548);
-  font-size: 1rem !important;
-  padding: 0.3rem;
-  border-radius: 1%;
+main .song-player .wave .wave1:nth-child(3) {
+  height: 8px;
+  /* animation-delay: 0.8s; */
 }
-.heart-icon {
-  background-color: #8ec5fcc0;
-  background-image: linear-gradient(62deg, #8ec5fcce 0%, #e0c3fcc4 100%);
-  font-size: 1rem !important;
-  padding: 0.3rem;
-  border-radius: 1%;
-  color: rgba(235, 233, 233, 0.733) !important;
-}
-.playlist-add {
-  margin-top: 10%;
-} */
 
-/* hover */
-main .menu-side .navbar ul li:hover main .menu-side .navbar ul li a {
-  color: #fff !important;
+@keyframes wave {
+  0% {
+    height: 10px;
+  }
+  50% {
+    height: 15px;
+  }
+  100% {
+    height: 10px;
+  }
 }
+/* javascript wave class */
+main .song-player .active2 .wave1 {
+  animation: wave 0.5s linear infinite;
+}
+main .song-player .active2 .wave1:nth-child(2) {
+  animation-delay: 0.4s;
+}
+main .song-player .active2 .wave1:nth-child(3) {
+  animation-delay: 0.8s;
+}
+/* wave end */
+
+/* song playes section ends */
