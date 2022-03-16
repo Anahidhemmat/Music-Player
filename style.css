@@ -181,15 +181,41 @@ main .song-player img {
 }
 
 /* music artist and name */
-main .song-player h5 {
+main .song-player .music-name h5 {
   width: 8.125rem;
   color: #fff;
   margin-left: 0.938rem;
-  font-size: 0.813rem;
+  font-size: 1rem;
   line-height: 1.3rem;
+  font-weight: 400;
 }
-main .song-player h5 .subtitle {
-  font-size: 0.8rem;
-  color: #4c5262;
+main .song-player .music-name .subtitle {
+  font-size: 0.9rem;
+  color: #595e6d;
+  margin-left: 0.938rem;
+}
+main .song-player .music-name h5:hover,
+main .song-player .music-name .subtitle:hover {
+  text-decoration: underline;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* like and cover icons */
+main .song-player .like-cover {
+  color: #595e6d;
+  font-size: 1.3rem;
+}
+main .song-player .like-cover .heart-outline {
+  margin-right: 0.5rem;
+  transition: all 0.3s linear;
+}
+main .song-player .like-cover .browsers-outline {
+  transition: all 0.3s linear;
+}
+main .song-player .like-cover .heart-outline:hover,
+main .song-player .like-cover .browsers-outline:hover {
+  cursor: pointer;
+  color: #fff;
 }
 /* song playes section ends */
