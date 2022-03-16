@@ -49,7 +49,6 @@ main .menu-side .navbar ul {
   margin-left: 5%;
   margin-right: 1%;
   list-style: none;
-  border-bottom: 0.001rem solid rgba(255, 255, 255, 0.281);
 }
 
 main .menu-side .navbar {
@@ -77,6 +76,7 @@ main .menu-side .navbar .active {
 }
 main .menu-side .links {
   margin: 20% 2% 5% 10%;
+  border-bottom: 0.001rem solid rgba(255, 255, 255, 0.157);
 }
 main .menu-side .links h6 {
   color: rgba(255, 255, 255, 0.377);
@@ -111,7 +111,7 @@ main .menu-side .links .liked ion-icon {
 /* song playes section starts*/
 
 main .song-player {
-  background-color: rgb(39, 44, 71);
+  background-color: rgb(0, 0, 0);
   width: 100%;
   height: 13%;
   position: fixed;
@@ -119,6 +119,7 @@ main .song-player {
   display: flex;
   align-items: center;
   padding: 0 1.5rem;
+  border-top: 0.001rem solid rgba(255, 255, 255, 0.144);
 }
 
 /* wavw start*/
@@ -129,6 +130,7 @@ main .song-player .wave {
   /* border: 1px solid #fff; */
   display: flex;
   align-items: flex-end;
+  margin-right: 0.6rem;
 }
 
 main .song-player .wave .wave1 {
@@ -172,4 +174,22 @@ main .song-player .active2 .wave1:nth-child(3) {
 }
 /* wave end */
 
+/* img */
+main .song-player img {
+  width: 3.438rem;
+  height: 3.438rem;
+}
+
+/* music artist and name */
+main .song-player h5 {
+  width: 8.125rem;
+  color: #fff;
+  margin-left: 0.938rem;
+  font-size: 0.813rem;
+  line-height: 1.3rem;
+}
+main .song-player h5 .subtitle {
+  font-size: 0.8rem;
+  color: #4c5262;
+}
 /* song playes section ends */
